@@ -1,8 +1,8 @@
-1. Create New Workflow
+Step 1: Create New Workflow
 
 Click New Workflow
 
-2. Add “On form submission”
+Step 2: Add “On Form Submission”
 
 Click +
 
@@ -10,7 +10,7 @@ Search Form Trigger
 
 Select On form submission
 
-3. Add Google Sheets Node
+Step 3: Add Google Sheets Node
 
 Click +
 
@@ -18,19 +18,23 @@ Search Google Sheets
 
 Choose Append Row
 
-4. Connect It
+Step 4: Connect Nodes
 
-Form submission → Append Row
+Connect Form Submission → Append Row
 
-5. Map Fields
+Step 5: Map Fields
 
 Name → Name column
+
 Email → Email column
+
 Phone → Phone column
 
-6. Save & Activate
+Step 6: Save & Activate
 
-Turn ON the workflow.
+Click Save
+
+Turn the workflow ON
 
 
 
