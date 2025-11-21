@@ -1,12 +1,12 @@
-1. Add Trigger Node
+Step 1: Add Trigger Node
 
 Click “+”
 
 Search Execute Workflow
 
-Add node → When Clicking ‘Execute Workflow’
+Add When Clicking ‘Execute Workflow’
 
-2. Add Form Node
+Step 2: Add Form Node
 
 Click “+”
 
@@ -16,7 +16,7 @@ Add On Form Submission
 
 Connect it to the Execute Workflow node.
 
-3. Add Google Gemini Chat Model
+Step 3: Add Google Gemini Chat Model
 
 Click “+”
 
@@ -24,53 +24,38 @@ Search Google Gemini Chat Model
 
 Select your Gemini API Credentials.
 
-No prompt here, just add the model.
+Do NOT add prompt here.
 
-4. Add AI Agent Node
+Step 4: Add AI Agent Node
 
 Click “+”
 
 Search AI Agent
 
-Inside:
+Set Goal/System Prompt
 
-Set Goal / system prompt (what the agent should do)
+Connect Input → Form Submission
 
-Connect:
+Connect Chat Model → Google Gemini Model
 
-Input ← From Form Submission
-
-Chat Model ← Google Gemini Model
-
-5. Add Gmail Node
+Step 5: Add Gmail Node
 
 Click “+”
 
 Search Gmail
 
-Select Send Email
+Choose Send Email
 
-Map the AI Agent’s output to:
+Map AI Agent output to: Subject, Body, Recipient Email
 
-Subject
+Step 6: Connect Everything
+Execute Workflow → Form Submission → AI Agent → Gmail
+Gemini Model connects to the AI Agent.
 
-Body
-
-Recipient email
-
-6. Connect Everything
-
-Final flow should look like:
-
-Execute Workflow → Form Submission → AI Agent → Gmail (Send Message)
-                     ↘ Google Gemini Model ↙
-
-7. Save & Activate
+Step 7: Save & Activate
 
 Click Save
 
 Click Activate Workflow
-
-
 # screenshot
 <img width="1370" height="565" alt="Screenshot 2025-11-21 115554" src="https://github.com/user-attachments/assets/047db9cd-f727-49d8-abb0-98f51b0a8ae4" />
