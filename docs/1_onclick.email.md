@@ -1,44 +1,73 @@
-1. Export Your Workflow
+Step 1: Add Trigger Node
 
-Open n8n
+Click +
 
-Go to your workflow
+Search When chat message received
 
-Click ⋯ (three dots) on top-right
+Add the node
+(This starts the chat)
 
-Click “Export” → “Download Workflow JSON”
+Step 2: Add AI Agent Node
 
-A file like workflow.json will download
+Click +
 
+Search AI Agent
 
-2. Create a GitHub Repo
+Add the node
 
-Go to github.com
+Connect Trigger → AI Agent
 
-Click New Repository
+Step 3: Add Google Gemini Model Node
 
-Give a name → example: n8n-workflows
+Click +
 
-Click Create Repository
+Search Google Gemini Chat Model
 
+Select your Gemini API credentials
 
-3. Upload Your JSON File
+Do NOT add a prompt here
 
-Inside your GitHub repo:
+Connect Gemini → AI Agent in the “Chat Model” input
 
-Click “Add file”
+Step 4: Configure AI Agent
+Inside the AI Agent:
 
-Choose “Upload files”
+Add Goal / System Prompt
 
-Select your workflow.json
+Set chat flow options
 
-Click Commit changes
+Enable memory if needed
 
+Tools if needed
+Inputs should be:
 
-4. Done 🎉
+Input → Trigger
 
-Your n8n workflow is now on GitHub.
+Chat Model → Gemini Model
 
+Step 5: Add Output Node
+
+Click +
+
+Search Send Message OR Respond to Chat
+
+Add it
+
+Connect AI Agent → Output Node
+
+Step 6: Test the Workflow
+
+Click Open Chat
+
+Send a message
+
+Check if AI responds correctly
+
+Step 7: Save & Activate
+
+Click Save
+
+Turn workflow ON
 
 #Screenshort
 <img width="1246" height="587" alt="Screenshot 2025-11-21 115542" src="https://github.com/user-attachments/assets/72ca346a-1fc6-4258-a8bb-53a655009488" />
