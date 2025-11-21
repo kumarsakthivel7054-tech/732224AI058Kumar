@@ -69,7 +69,7 @@ Click Save
 
 Turn workflow ON
 
-#Screenshort
+# Screenshort
 <img width="1246" height="587" alt="Screenshot 2025-11-21 115542" src="https://github.com/user-attachments/assets/72ca346a-1fc6-4258-a8bb-53a655009488" />
 
 
