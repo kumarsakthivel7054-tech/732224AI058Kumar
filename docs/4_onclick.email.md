@@ -1,51 +1,12 @@
-1. Add the Trigger
-
-Drag “When clicking ‘Execute workflow’” node.
-
-This will manually start the workflow.
-
-2. Add Google Sheets Read Node
-
-Drag Google Sheets → “Get row(s) in sheet”.
-
-Connect it to the trigger.
-
-Select spreadsheet + sheet.
-
-(Optional) Add filters if needed.
-
-3. Add IF Node
-
-Drag IF node.
-
-Connect the “Get row(s)” output to it.
-
-Set condition (example: check if row exists).
-
-4. Add Append Row (TRUE path)
-
-Drag Google Sheets → Append Row.
-
-Connect it to IF → TRUE output.
-
-Select sheet and map fields.
-
-5. Add Append Row (FALSE path)
-
-Drag another Append Row node.
-
-Connect it to IF → FALSE output.
-
-Select different sheet (sheet1) and map fields.
-
-6. Save + Execute
-
-Click Save.
-
-Run the workflow using Execute Workflow.
-
-
-
+Step 1: Add the trigger node “When clicking ‘Execute workflow’”.
+Step 2: Add Google Sheets → “Get row(s)” and connect it to the trigger.
+Step 3: Choose spreadsheet and sheet.
+Step 4: Add IF node and connect it to “Get row(s)”.
+Step 5: Set the IF condition (example: row exists).
+Step 6: Add Append Row node for TRUE path and map fields.
+Step 7: Add Append Row node for FALSE path and map fields.
+Step 8: Save the workflow.
+Step 9: Click Execute Workflow to run.
 
 
 # screenshot
